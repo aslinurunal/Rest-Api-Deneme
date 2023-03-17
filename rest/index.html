@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="veriGetir()">
+
+    <h2>Posts</h2>
+
+    <div>
+        <form action="/action_page.php">
+            <label for="baslik">Title</label>
+            <input type="hidden" value="" id="id">
+            <input type="text" id="baslik" name="baslik" placeholder="Title..">
+
+            <label for="mesaj">Body</label>
+            <input type="text" id="mesaj" name="mesaj" placeholder="Body..">
+
+            <input type="hidden" value="5" id="kullaniciId">
+
+            <a href="#" onclick="ekle()">Ekle</a>
+            <a href="#" onclick="guncelle()">Güncelle</a>
+            <a href="#" onclick="sil()">Sil</a>
+        </form>
+    </div>
+    <br>
+    <table id="posts">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>User Id</th>
+            <th></th>
+        </tr>
+    </table>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
